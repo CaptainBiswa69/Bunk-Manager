@@ -1,0 +1,39 @@
+{
+  "project_info": {
+    "project_number": "1029077921461",
+    "project_id": "bunk-manager-d683d",
+    "storage_bucket": "bunk-manager-d683d.appspot.com"
+  },
+  "client": [
+    {
+      "client_info": {
+        "mobilesdk_app_id": "1:1029077921461:android:53a7e204716b4b4e2698fc",
+        "android_client_info": {
+          "package_name": "com.example.bunkmanager2"
+        }
+      },
+      "oauth_client": [
+        {
+          "client_id": "1029077921461-e60occdmneu48lmj13odf0bkl0paukbf.apps.googleusercontent.com",
+          "client_type": 3
+        }
+      ],
+      "api_key": [
+        {
+          "current_key": "AIzaSyAP5mglfBZ_L6xbMvmKK9BAO9SF6Djagz8"
+        }
+      ],
+      "services": {
+        "appinvite_service": {
+          "other_platform_oauth_client": [
+            {
+              "client_id": "1029077921461-e60occdmneu48lmj13odf0bkl0paukbf.apps.googleusercontent.com",
+              "client_type": 3
+            }
+          ]
+        }
+      }
+    }
+  ],
+  "configuration_version": "1"
+}

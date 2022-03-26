@@ -1,0 +1,236 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.cardview.widget.CardView xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:layout_marginTop="10dp"
+    android:layout_marginLeft="10dp"
+    android:layout_marginRight="10dp"
+    app:cardCornerRadius="20dp"
+
+
+    xmlns:app="http://schemas.android.com/apk/res-auto">
+
+    <androidx.constraintlayout.widget.ConstraintLayout
+        android:id="@+id/relativeLayout2"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:background="@drawable/t4_re"
+        android:padding="10dp">
+
+
+        <TextView
+            android:id="@+id/subject_name"
+            android:layout_width="150dp"
+            android:layout_height="wrap_content"
+            android:gravity="center"
+            android:text="Subject"
+            android:textColor="@color/white"
+            android:textSize="20sp"
+            android:textStyle="bold"
+            app:layout_constraintLeft_toLeftOf="parent"
+            app:layout_constraintRight_toRightOf="parent"
+            app:layout_constraintTop_toTopOf="parent" />
+
+        <TextView
+            android:id="@+id/Catagory"
+            android:layout_width="150dp"
+            android:layout_height="wrap_content"
+            android:gravity="center"
+            android:text="Subject"
+            android:textColor="@color/white"
+            android:textSize="20sp"
+            android:visibility="invisible"
+            app:layout_constraintRight_toLeftOf="@+id/subject_name"
+            app:layout_constraintTop_toTopOf="parent" />
+
+        <TextView
+            android:id="@+id/present_coloumn"
+            android:layout_width="75dp"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="15dp"
+            android:gravity="center"
+            android:text="Present"
+            android:textColor="@color/white"
+            android:textSize="18sp"
+            app:layout_constraintEnd_toStartOf="@+id/absent_coloumn"
+            app:layout_constraintHorizontal_bias="0.5"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toBottomOf="@+id/subject_name" />
+
+        <TextView
+            android:id="@+id/absent_coloumn"
+            android:layout_width="75dp"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="15dp"
+            android:gravity="center"
+            android:text="Absent"
+            android:textColor="@color/white"
+            android:textSize="18sp"
+            app:layout_constraintEnd_toStartOf="@+id/total_coloumn"
+            app:layout_constraintHorizontal_bias="0.5"
+            app:layout_constraintStart_toEndOf="@+id/present_coloumn"
+            app:layout_constraintTop_toBottomOf="@+id/subject_name" />
+
+        <TextView
+            android:id="@+id/total_coloumn"
+            android:layout_width="75dp"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="15dp"
+
+            android:gravity="center"
+            android:text="Total"
+            android:textColor="@color/white"
+            android:textSize="18sp"
+            app:layout_constraintEnd_toStartOf="@+id/percent_coloumn"
+            app:layout_constraintHorizontal_bias="0.5"
+            app:layout_constraintStart_toEndOf="@+id/absent_coloumn"
+            app:layout_constraintTop_toBottomOf="@+id/subject_name" />
+
+        <TextView
+            android:id="@+id/percent_coloumn"
+            android:layout_width="92dp"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="15dp"
+
+            android:gravity="center"
+            android:text="Percentage"
+            android:textColor="@color/white"
+            android:textSize="18sp"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintHorizontal_bias="0.5"
+            app:layout_constraintStart_toEndOf="@+id/total_coloumn"
+            app:layout_constraintTop_toBottomOf="@+id/subject_name" />
+
+        <TextView
+            android:id="@+id/present_count"
+            android:layout_width="75dp"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="15dp"
+            android:gravity="center"
+            android:text="60"
+            android:textColor="@color/white"
+            android:textSize="18sp"
+            app:layout_constraintEnd_toStartOf="@+id/absent_count"
+            app:layout_constraintHorizontal_bias="0.5"
+            app:layout_constraintHorizontal_chainStyle="spread"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toBottomOf="@+id/present_coloumn" />
+
+        <TextView
+            android:id="@+id/absent_count"
+            android:layout_width="75dp"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="15dp"
+            android:gravity="center"
+            android:text="60"
+            android:textColor="@color/white"
+            android:textSize="18sp"
+            app:layout_constraintEnd_toStartOf="@+id/total_count"
+            app:layout_constraintHorizontal_bias="0.5"
+            app:layout_constraintStart_toEndOf="@+id/present_count"
+            app:layout_constraintTop_toBottomOf="@+id/absent_coloumn" />
+
+        <TextView
+            android:id="@+id/total_count"
+            android:layout_width="75dp"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="15dp"
+            android:gravity="center"
+            android:text="60"
+            android:textColor="@color/white"
+            android:textSize="18sp"
+            app:layout_constraintEnd_toStartOf="@+id/percentage_count"
+            app:layout_constraintHorizontal_bias="0.5"
+            app:layout_constraintStart_toEndOf="@+id/absent_count"
+            app:layout_constraintTop_toBottomOf="@+id/total_coloumn" />
+
+        <TextView
+            android:id="@+id/percentage_count"
+            android:layout_width="92dp"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="15dp"
+            android:gravity="center"
+            android:text="60"
+            android:textColor="@color/white"
+            android:textSize="18sp"
+            app:cornerRadius="18dp"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintHorizontal_bias="0.5"
+            app:layout_constraintStart_toEndOf="@+id/total_count"
+            app:layout_constraintTop_toBottomOf="@+id/percent_coloumn" />
+
+        <com.google.android.material.button.MaterialButton
+            android:id="@+id/edit_present_count"
+            android:layout_width="75dp"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="15dp"
+            android:backgroundTint="@android:color/transparent"
+            android:text="Edit"
+            android:textColor="@color/white"
+            app:cornerRadius="18dp"
+            app:layout_constraintEnd_toStartOf="@+id/edit_absent_count"
+            app:layout_constraintHorizontal_bias="0.5"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toBottomOf="@+id/present_count" />
+
+        <com.google.android.material.button.MaterialButton
+            android:id="@+id/edit_absent_count"
+            android:layout_width="75dp"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="15dp"
+            android:backgroundTint="@android:color/transparent"
+            android:text="Edit"
+            android:textColor="@color/white"
+            app:cornerRadius="18dp"
+            app:layout_constraintEnd_toStartOf="@+id/delete_row"
+            app:layout_constraintHorizontal_bias="0.5"
+            app:layout_constraintStart_toEndOf="@+id/edit_present_count"
+            app:layout_constraintTop_toBottomOf="@+id/absent_count" />
+
+        <com.google.android.material.button.MaterialButton
+            android:id="@+id/present_button"
+            android:layout_width="165dp"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="15dp"
+            android:backgroundTint="@android:color/transparent"
+            android:text="Present"
+            android:textColor="@color/white"
+            app:cornerRadius="18dp"
+            app:layout_constraintEnd_toStartOf="@+id/absent_button"
+            app:layout_constraintHorizontal_bias="0.5"
+            app:layout_constraintHorizontal_chainStyle="spread"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toBottomOf="@+id/edit_present_count" />
+
+        <com.google.android.material.button.MaterialButton
+            android:id="@+id/absent_button"
+            android:layout_width="165dp"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="15dp"
+            android:backgroundTint="@android:color/transparent"
+            android:text="Absent"
+            android:textColor="@color/white"
+            app:cornerRadius="18dp"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintHorizontal_bias="0.5"
+            app:layout_constraintStart_toEndOf="@+id/present_button"
+            app:layout_constraintTop_toBottomOf="@+id/delete_row" />
+
+        <com.google.android.material.button.MaterialButton
+            android:id="@+id/delete_row"
+            android:layout_width="165dp"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="15dp"
+            android:backgroundTint="@android:color/transparent"
+            android:text="Delete"
+            android:textColor="@color/white"
+            app:cornerRadius="18dp"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintHorizontal_bias="0.5"
+            app:layout_constraintStart_toEndOf="@+id/edit_absent_count"
+            app:layout_constraintTop_toBottomOf="@+id/total_count" />
+
+
+    </androidx.constraintlayout.widget.ConstraintLayout>
+
+</androidx.cardview.widget.CardView>
